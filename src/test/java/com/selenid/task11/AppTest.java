@@ -6,9 +6,10 @@ import pageobjectsTask11.HomePage;
 import pageobjectsTask11.LoginPage;
 import ru.yandex.qatools.allure.annotations.*;
 
-import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.title;
 
 @Listeners(SomeListener.class)
 public class AppTest {
@@ -16,7 +17,7 @@ public class AppTest {
     private static final String URL = "https://192.168.100.26/";
     private static final String USERNAME = "AnastasiaShumskaya";
     private static final String PASSWORD = "1";
-    private static final String TITLE = "Home";
+    private static final String TITLE = "Office";
     private static final String NAME = "Shumskaya, Anastasia";
 
     @Test(groups = "fast")
@@ -28,7 +29,7 @@ public class AppTest {
         LoginPage rmSysPage = open(URL, LoginPage.class);
         HomePage homePage = rmSysPage.login(USERNAME, PASSWORD);
 
-        $(homePage.getTitle()).shouldHave(text(TITLE));
+        assert homePage.linkName().contains(NAME);
     }
 
     @Test(groups = "fast")
@@ -36,11 +37,12 @@ public class AppTest {
     @Features("Login")
     @Stories("Verify the ability to login to app with valid credentials")
     @Description("test Description")
-    public void officeTabCase() {
+    public void officeTabCase() throws InterruptedException {
         LoginPage rmSysPage = open(URL, LoginPage.class);
         HomePage homePage = rmSysPage.login(USERNAME, PASSWORD);
+        Thread.sleep(4000);//????????????
         homePage.goToOfficeTab();
-
-        $(homePage.linkName()).shouldHave(text(NAME));
+        Thread.sleep(4000);
+        assert homePage.getTitle().contains(TITLE);
     }
 }

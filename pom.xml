@@ -139,7 +139,7 @@
                 <version>2.19.1</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${basedir}/src/main/resources/all-tests.xml</suiteXmlFile>
+                        <suiteXmlFile>${basedir}/src/main/resources/testng.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <properties>
                         <configfailurepolicy>continue</configfailurepolicy>
