@@ -28,7 +28,7 @@ public class SomeListener implements ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-
+        captureScreenshot();
     }
 
     @Override

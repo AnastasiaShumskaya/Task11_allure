@@ -1,15 +1,19 @@
 package com.selenid.task11;
 
+import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pageobjectsTask11.HomePage;
 import pageobjectsTask11.LoginPage;
-import ru.yandex.qatools.allure.annotations.*;
+import ru.yandex.qatools.allure.annotations.Description;
+import ru.yandex.qatools.allure.annotations.Features;
+import ru.yandex.qatools.allure.annotations.Stories;
+import ru.yandex.qatools.allure.annotations.TestCaseId;
 
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.close;
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.title;
+import static com.codeborne.selenide.WebDriverRunner.source;
 
 @Listeners(SomeListener.class)
 public class AppTest {
@@ -29,7 +33,8 @@ public class AppTest {
         LoginPage rmSysPage = open(URL, LoginPage.class);
         HomePage homePage = rmSysPage.login(USERNAME, PASSWORD);
 
-        assert homePage.linkName().contains(NAME);
+        Assert.assertTrue(homePage.linkName().contains(NAME), "Profile name is wrong!");
+        close();
     }
 
     @Test(groups = "fast")
@@ -40,9 +45,9 @@ public class AppTest {
     public void officeTabCase() throws InterruptedException {
         LoginPage rmSysPage = open(URL, LoginPage.class);
         HomePage homePage = rmSysPage.login(USERNAME, PASSWORD);
-        Thread.sleep(4000);//????????????
         homePage.goToOfficeTab();
-        Thread.sleep(4000);
-        assert homePage.getTitle().contains(TITLE);
+
+        Assert.assertTrue(homePage.getTitle().contains(TITLE), "Loaded page is wrong!");
+        close();
     }
 }
