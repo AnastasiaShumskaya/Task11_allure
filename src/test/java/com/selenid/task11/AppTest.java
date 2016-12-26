@@ -1,7 +1,6 @@
 package com.selenid.task11;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pageobjectsTask11.HomePage;
@@ -13,7 +12,6 @@ import ru.yandex.qatools.allure.annotations.TestCaseId;
 
 import static com.codeborne.selenide.Selenide.close;
 import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.WebDriverRunner.source;
 
 @Listeners(SomeListener.class)
 public class AppTest {

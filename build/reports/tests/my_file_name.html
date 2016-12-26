@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+    <title>RMSys - Home</title>
+    <meta content="IE=10" http-equiv="X-UA-Compatible" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <script src="/Scripts/RMSys/RedirectRouting.js"></script>
+
+    <link rel="stylesheet" href="/Content/css/jquery-custom-theme/jquery-ui-1.8.21.custom.css" />
+<link rel="stylesheet" href="/Content/css/rmsys/Master.css" />
+<link rel="stylesheet" href="/Content/css/rmsys/Site.css" />
+<link rel="stylesheet" href="/Content/css/rmsys/Feedback.css" />
+<link rel="stylesheet" href="/Content/css/rmsys/FormPopup.css" />
+<link rel="stylesheet" href="/Content/css/rmsys/DropDownList.css" />
+<link rel="stylesheet" href="/Content/css/rmsys/Spinner.css" />
+<link rel="stylesheet" href="/Content/css/rmsys/SelectorControl.css" />
+<link rel="stylesheet" href="/Content/css/jquery-custom-theme/ui.datepicker.css" />
+
+    <script src="/Scripts/jquery-1.9.1.js"></script>
+<script src="/Scripts/jquery-ui.js"></script>
+<script src="/Scripts/migrateScript.js"></script>
+<script src="/Scripts/jquery.textshadow.js"></script>
+<script src="/Scripts/RMSys/CheckBrowser.js"></script>
+
+    <script src="/Scripts/jquery.unobtrusive-ajax.js"></script>
+<script src="/Scripts/jquery.validate.js"></script>
+<script src="/Scripts/jquery.validate.unobtrusive.js"></script>
+
+    <script src="/Scripts/RMSys/helpers.js"></script>
+<script src="/Scripts/RMSys/dateHelpers.js"></script>
+<script src="/Scripts/RMSys/Feedback.js"></script>
+<script src="/Scripts/RMSys/Extensions.js"></script>
+<script src="/Scripts/RMSys/DropDownList.js"></script>
+<script src="/Scripts/RMSys/controls/selector-control.js"></script>
+
+    <script src="/Scripts/RMSys/Tooltip.js"></script>
+
+    <script src="/Scripts/RMSys/AutentificationError.js"></script>
+
+    <script src="/Scripts/knockout-2.2.1.debug.js"></script>
+<script src="/Scripts/knockout.mapping-latest.debug.js"></script>
+
+    <script src="/Scripts/RMSys/controls/custom-multiselect.js"></script>
+
+    <script src="/Scripts/RMSys/custom-dropdown/jquery.selectbox-0.2.js"></script>
+<script src="/Scripts/RMSys/custom-dropdown/jquery.selectbox-0.2.extensions.js"></script>
+
+
+    <link rel="stylesheet" href="/Content/css/custom-dropdown/jquery.selectbox.css" />
+
+    <link rel="stylesheet" href="/Content/css/rmsys/Tooltip.css" />
+
+    <link rel="stylesheet" href="/Content/css/controls/custom-multiselect.css" />
+
+
+    
+
+    <script type="text/javascript">
+        // temporary disabled until rmsys mobile is fully ready
+        //setupRedirectToMobile('https://192.168.100.26:11119');
+    </script>
+</head>
+<body>
+
+    <div class="main" id="main_div">
+        <div class="top" id="divMenu">
+            <div class="top-center-menu">
+                <div class="welcome-message">
+                    Welcome,
+                    <span id="username-settings">
+                        Anastasia
+                        <a href="/Individual/IndividualProfile?loginName=AnastasiaShumskaya">My Profile</a>
+                    </span>
+                </div>
+                <div id="welcomeDivContent">
+                    <div class="menu-links">
+                        <span class="send-feedback-message"><a title="Send feedback" href="/"><ins>Feedback</ins></a></span><span class="menu-link-separator">|</span>
+                        <span><a title="Send mail" href="mailto:rmsys@cosol.com"><ins>Contact Us</ins></a></span><span class="menu-link-separator">|</span>
+                        <span class="sign-out-span"><a title="Sign out" href="/"><ins>Sign Out</ins></a></span>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="top-center-div-tabs">
+                <div class="top-center">
+                    <div class="tabs-menu">
+
+
+
+
+    <div class="menu-left-float">
+
+        <a id="homeMenu" href="/Home/Index"> Home</a>
+        <span onclick="location.href='/Home/Index'"><span class="count"></span></span>
+    </div>
+
+    <div class="menu-left-float">
+
+        <a id="individualMenu" href="/Individual/Index"> Individual</a>
+        <span onclick="location.href='/Individual/Index'"><span class="count">663</span></span>
+    </div>
+
+    <div class="menu-left-float">
+
+        <a id="clientMenu" href="/Client/Index"> Client</a>
+        <span onclick="location.href='/Client/Index'"><span class="count">65</span></span>
+    </div>
+
+    <div class="menu-left-float">
+
+        <a id="projectMenu" href="/Project/Index"> Project</a>
+        <span onclick="location.href='/Project/Index'"><span class="count">155</span></span>
+    </div>
+
+    <div class="menu-left-float">
+
+        <a id="skillMenu" href="/SkillExplorer/Index"> Skill Explorer</a>
+        <span onclick="location.href='/SkillExplorer/Index'"><span class="count"></span></span>
+    </div>
+
+    <div class="menu-left-float">
+
+        <a id="officeMenu" href="/Office/Index"> Office</a>
+        <span onclick="location.href='/Office/Index'"><span class="count">28</span></span>
+    </div>
+
+    <div class="menu-left-float">
+
+        <a id="companyMenu" href="/Company/Index"> Company</a>
+        <span onclick="location.href='/Company/Index'"><span class="count">2</span></span>
+    </div>
+
+
+
+
+    <div class="menu-left-float">
+
+        <a id="vacationMenu" href="/VacationRequest/Index"> Vacation</a>
+        <span onclick="location.href='/VacationRequest/Index'"><span class="count"></span></span>
+    </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+<link rel="stylesheet" href="/Content/css/rmsys/PageHeader.css" />
+
+<link rel="stylesheet" href="/Content/css/rmsys/GlobalSearch.css" />
+
+<script src="/Scripts/RMSys/globalSearch/GlobalSearch.js"></script>
+
+<div class="toolbar toolbar-header toolbar-border-top">
+    <div data-queries-url="/GlobalSearch/GetQueries" data-results-url="/GlobalSearch/Results" class="global-search-container">
+	    <input type="text" value="Global search" name="SearchQuery" class="global-search" onfocus="if (this.value=='Global search') this.value = ''" onblur="if(this.value=='') this.value='Global search'" />
+	    <button title="Global search" class="search-button" type="button">
+	    </button>
+        <button title="Clear" class="global-search-deleteicon" type="button">
+	    </button>
+	    <div class="global-search-queries-container" style="display:none">
+	    </div>
+    </div>
+    <div class="global-search-results-container">
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        initSearchEvents();
+    });
+</script>
+
+
+<link rel="stylesheet" href="/Content/css/rmsys/MetroStylePanel.css" />
+<link rel="stylesheet" href="/Content/css/rmsys/MetroStyleWidgets.css" />
+
+<link rel="stylesheet" href="/Content/css/rmsys/Office.css" />
+<link rel="stylesheet" href="/Content/css/rmsys/OfficeManagement.css" />
+
+<link rel="stylesheet" href="/Content/css/rmsys/OfficePopup.css" />
+
+<link rel="stylesheet" href="/Content/css/rmsys/Common.css" />
+<link rel="stylesheet" href="/Content/css/rmsys/ViewTabs.css" />
+
+<link rel="stylesheet" href="/Content/css/rmsys/PullDownList.css" />
+<link rel="stylesheet" href="/Content/css/rmsys/Reveal.css" />
+
+
+<script src="/Scripts/RMSys/MetroStylePanel.js"></script>
+
+<script src="/Scripts/jQuery.download.js"></script>
+
+<script src="/Scripts/RMSys/page-common.js"></script>
+<script src="/Scripts/RMSys/Overlay.js"></script>
+<script src="/Scripts/RMSys/Spinner.js"></script>
+<script src="/Scripts/RMSys/PageTimeFilter.js"></script>
+<script src="/Scripts/RMSys/grid/global-var.js"></script>
+
+<script src="/Scripts/RMSys/OfficeManagement.js"></script>
+
+
+<div class="metroStylePanelsContainerWrapper">
+<div class="metroStylePanelsContainer">
+	<div class="metroStylePanelCell" id="MetroStyleCenterPanel"><div id="10a1db5d-8e2c-478c-a980-e51f94b3b4ef" class="metroStyleTable">
+
+
+        <div class="metroStyleRow" id="metroStyleRow_1">
+
+
+	                <div data-iscustom="False" data-actionurl="/MetroStylePanel/CurrentUserWidget" class="metroStyleCell" id="metroStyleCell_1">                          
+		                <div class="defaultLargeWidgetSize defaultWidgetsFont defaultWidgetBackgroundColor defaultWidgetStyle roundBorder" id="b401e343-38d9-4b43-b9d1-4afa152fba8e">
+			                <div class="widgetLightHeaderBackgroundColor">
+		
+<div class="widgetsHeader">
+	<span class="widgetHeaderIconsMargin individualWidgetIcon widgetIcon"></span>
+	<span id="widgetName">You</span>
+</div>			                </div>
+			                <div class="defaultWidgetYScrolling">
+
+<div class="widgetContentLeftMargin widgetContentRightMargin" id="currentUserWidgetContent">
+    
+	<div id="photo">
+		<img src="/Image/GetBigCroppedIndividualPhoto?id=2cbecc29-a39a-43d8-986a-8166c63e7b6f&amp;width=95&amp;height=128" alt="Individual image" />
+	</div>
+	<div id="info">
+        <a href="/Individual/Display?name=Shumskaya%20Anastasia&amp;id=2cbecc29-a39a-43d8-986a-8166c63e7b6f" class="name"><div class="ellipsis-full-container-hidden" id="name">Shumskaya, Anastasia</div></a>
+		    <div id="company">
+                <a href="/Company/Display?name=ISsoft%20Solutions&amp;id=a29b2e84-58d3-497b-af19-c7c70d7c68ac" class="widgetsBoldArialLinks">ISsoft Solutions</a>
+		    </div>
+		<!-- In current version this code is not needed. It will be used in future for showing Skill Set       
+			<span class="widgetsLinks" onclick="OpenUserSkillsDialog()">
+				<span class="widgetCurrentUserSkillSetIcon"></span>
+				<span class="widgetsBoldArialLinks">Skill Set</span>
+			</span>
+			-->
+        
+		<div id="department">QA Automation | Engineer</div>
+        <div class="personalContactsContainer defaultWidgetsFont">
+
+<div class="contacts-hot">
+			<div>
+                <span class="contactType">
+                    Mobile:
+                </span>
+				<span class="contactText">
+					+375 (29) 7087162 
+				</span>
+            </div>
+            <div>
+                <span class="contactType">
+                    Email:
+                </span>
+                <span class="contactText">
+                        <a href="mailto:sergeygorbabafake@gmail.com">sergeygorbabafake@gmail.com</a>
+                                    </span>
+            </div>
+            <div>
+                <span class="contactType">
+                    Skype:
+                </span>
+                <span class="contactText">
+                                            <a href="skype:csi.AnastasiaShumskaya?chat">csi.AnastasiaShumskaya</a>
+                </span>
+            </div>
+
+</div>
+		    <div id="position">
+                        <a href="javascript:OpenOfficePlane('20dab498-c2eb-407f-a7d0-5aec70e85f5a', 'Chapaeva 118', '2cbecc29-a39a-43d8-986a-8166c63e7b6f')">Workspace at Chapaeva 118</a>
+                        <br />
+		    </div>
+        </div>
+	</div>
+<!-- In current version this code is not needed. It will be used in future for showing Skill Set       
+    <div id="SkillSetDialogb0b202c3-066b-4438-ac14-c11f2a51d7af" style="display: none">
+    </div>
+
+    <script type="text/javascript">
+        var defaultWidth = 1200;
+        var defaultHeight = 724;
+        function OpenUserSkillsDialog() {
+            var container = $("#SkillSetDialogb0b202c3-066b-4438-ac14-c11f2a51d7af");
+
+            container.dialog({
+                title: "Skill",
+                modal: true,
+                closeOnEscape: true,
+                resizable: false,
+                width: 1200,
+                height: 724
+            });
+        }
+    </script>
+-->
+</div>
+
+
+<script type="text/javascript">
+    $(function() {
+        createOfficeDialogDivIfNeeded("b0b202c3-066b-4438-ac14-c11f2a51d7af");
+    });
+</script>
+</div>
+		                </div>
+	                </div>
+        </div>
+        <div class="metroStyleRow" id="metroStyleRow_2">
+
+
+	                <div data-iscustom="False" data-actionurl="/MetroStylePanel/ProjectWidget" class="metroStyleCell" id="metroStyleCell_1">                          
+		                <div class="defaultMediumWidgetSize defaultWidgetsFont defaultWidgetBackgroundColor defaultWidgetStyle roundBorder" id="2904e75d-1ac8-436a-a75a-001464e5981e">
+			                <div class="widgetDefaultHeaderBackgroundColor">
+		
+<div class="widgetsHeader">
+	<span class="widgetHeaderIconsMargin projectWidgetIcon widgetIcon"></span>
+	<span id="widgetName">Projects</span>
+</div>			                </div>
+			                <div class="defaultWidgetYScrolling">
+<ol class="defaultWidgetBackgroundColor projectsWidget zebraStyle">
+			<li class="widgetContentLeftMargin widgetContentRightMargin widgetSelectableRow">
+				<a href="/Project/Display?name=GM%20-%20Lepeshko,%20Marina&amp;id=0f3a3232-3bb0-4447-8c23-8271bc3c96c8">GM - Lepeshko, Marina</a>
+			</li>
+			<li class="widgetContentLeftMargin widgetContentRightMargin widgetSelectableRow">
+				<a href="/Project/Display?name=TC%20-%20QA%20Automation&amp;id=e3613897-b9bc-49f3-a21f-8666e5e310e8">TC - QA Automation</a>
+			</li>
+</ol>
+</div>
+		                </div>
+	                </div>
+	                <div data-iscustom="False" data-actionurl="/MetroStylePanel/ClientWidget" class="metroStyleCell" id="metroStyleCell_2">                          
+		                <div class="defaultMediumWidgetSize defaultWidgetsFont defaultWidgetBackgroundColor defaultWidgetStyle roundBorder" id="cb6427e3-2332-4d9f-ad54-15ca7a8a3e44">
+			                <div class="widgetDefaultHeaderBackgroundColor">
+		
+<div class="widgetsHeader">
+	<span class="widgetHeaderIconsMargin clientWidgetIcon widgetIcon"></span>
+	<span id="widgetName">Clients</span>
+</div>			                </div>
+			                <div class="defaultWidgetYScrolling">
+			                </div>
+		                </div>
+	                </div>
+        </div>
+</div>
+<script type="text/javascript">
+    $('#10a1db5d-8e2c-478c-a980-e51f94b3b4ef .metroStyleCell').each(function () {
+        var url = $(this).attr('data-actionUrl');
+        var isCustom = $(this).data('isCustom');
+        $.ajax({
+            url: url,
+            async:false,
+            type: 'POST',
+            cache: false,
+            success: function (result) {
+                var temp = '.metroStyleCell[data-actionUrl="' + this.url + '"]';
+                var selector = isCustom == "True" ? temp : temp + ' .defaultWidgetYScrolling';
+                $(selector).html(result);
+            }
+        });
+    });
+</script></div></div></div></div></body></html>
